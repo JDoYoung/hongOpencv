@@ -1,9 +1,6 @@
 import numpy as np
 import cv2
 
-import numpy as np
-import cv2
-
 def main():
     # 'backgound' -> 'background' 로 변경
     image = cv2.imread("/home/aa/hongOpencv/data/hong_background.jpg", cv2.IMREAD_COLOR)
