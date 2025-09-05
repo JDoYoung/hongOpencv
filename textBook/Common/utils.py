@@ -2,7 +2,6 @@ import numpy as np
 import cv2, time
 
 def print_matInfo(name, image):
-    
     if image.dtype == 'uint8':  mat_type = 'CV_8U'
     elif image.dtype == 'int8': mat_type = 'CV_8S'
     elif image.dtype == 'uint16': mat_type = 'CV_16U'
