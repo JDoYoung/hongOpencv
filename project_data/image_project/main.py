@@ -3,6 +3,7 @@ import numpy as np
 from textSprite import TextSprite
 from logoSprite import LogoSprite
 from imageSprite import ImageSprite
+from videoSprite import VideoSprite
 
 class MainDraw:
     def __init__(self, screen_width=800, screen_height=600):
@@ -35,6 +36,10 @@ class MainDraw:
         # 이미지 스프라이트 생성
         self.image_sprite = ImageSprite(120, 60, "data/lenna.bmp", (400, 500))
         self.sprites.append(self.image_sprite)
+
+        # 비디오 스프라이트 생성
+        self.video_sprite = VideoSprite(530, 60, video_source=0, size=(250, 200))
+        self.sprites.append(self.video_sprite)
 
     def update_bgr_info(self):
         """BGR 정보 텍스트 업데이트"""
